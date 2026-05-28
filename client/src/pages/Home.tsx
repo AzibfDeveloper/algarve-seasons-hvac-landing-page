@@ -878,20 +878,67 @@ export default function Home() {
 
             {/* Reviews */}
             <div className="space-y-4">
+              {/* Aggregate rating badge — real Google data: 5.0 / 33 reviews */}
+              <a
+                href="https://share.google/mpPirFS6UJ3rE0WmM"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 bg-white rounded-md p-5 shadow-sm border border-[#E5E7EB] hover:border-[#1E73BE]/40 transition-colors"
+                aria-label="View Algarve Seasons reviews on Google — rated 5.0 out of 5 from 33 reviews"
+              >
+                <div className="shrink-0 w-14 h-14 rounded-full bg-white border border-[#E5E7EB] flex items-center justify-center shadow-sm">
+                  <svg viewBox="0 0 48 48" className="w-7 h-7" aria-hidden="true">
+                    <path fill="#4285F4" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/>
+                    <path fill="#34A853" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/>
+                    <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
+                    <path fill="#EA4335" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span
+                      className="text-[#1E73BE] font-bold text-lg"
+                      style={{ fontFamily: "'Josefin Sans', sans-serif" }}
+                    >
+                      5.0
+                    </span>
+                    <div className="flex gap-0.5">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={14} className="fill-[#E89B2A] text-[#E89B2A]" />
+                      ))}
+                    </div>
+                  </div>
+                  <p className="text-[#444444] text-xs">
+                    Based on <span className="font-semibold">33 verified Google reviews</span>
+                  </p>
+                </div>
+                <span
+                  className="text-[10px] font-bold text-[#1E73BE] uppercase tracking-widest hidden sm:inline"
+                  style={{ fontFamily: "'Josefin Sans', sans-serif", letterSpacing: "0.16em" }}
+                >
+                  View on Google →
+                </span>
+              </a>
+
               <ReviewCard
-                name="James H."
-                location="Villa owner, Vilamoura"
-                text="Algarve Seasons installed a full Daikin multi-split system across our villa. The team was professional, tidy, and explained everything clearly. The system has been running perfectly through two summers now."
+                name="Lotte Barendse"
+                location="Apartment owner, Algarve"
+                text="A few years ago, Algarve Seasons installed 2 air conditioning units in our apartment, and because we were so satisfied with their work, we asked them to install units in the other bedrooms as well. Yesterday they installed these additional units and they did a perfect job! It wasn't the easiest project, as our apartment didn't yet have any piping in place, but the team really took the time to think along with us and find the best solution to keep everything as discreet as possible. The team was super professional, friendly, polite and they made sure everything was cleaned up before leaving. They completed everything in just one day and we are extremely happy with the result. Would highly recommend if you're looking for aircon installation, thanks Dan and team!"
               />
               <ReviewCard
-                name="Maria S."
-                location="Rental property manager, Albufeira"
-                text="We manage several rental villas and Algarve Seasons handles all our HVAC maintenance. Response times are excellent and our guests have never complained about the air conditioning."
+                name="David Hedley"
+                location="Homeowner, Algarve"
+                text="Excellent prompt service from survey to completion. The air conditioning units were installed in one day. 4 very pleasant and polite men who worked non stop to complete the job. The installation was very neat and professional and they cleared up as they went, so no dust or dirt anywhere. I am very happy with my experience with Algarve Seasons and wouldn't hesitate to recommend them to anyone considering having air con installed in their property."
               />
               <ReviewCard
-                name="David & Claire T."
-                location="Homeowners, Lagos"
-                text="We asked for advice on whether to install air conditioning or a heat pump. The team gave us honest, practical guidance and we chose a heat pump solution that works brilliantly for both summer and winter."
+                name="Michael Kergin"
+                location="Daikin heat exchanger client"
+                text="Very pleased with the efficiency, quality and personality of Dan Cooney and his installation team. The system was emplaced on budget and within the specified time frame. The product, Daikin heat exchangers (four installed) work excellently, as advertised. I would highly recommend Algarve Seasons to anyone (as indeed, the company was recommended to me)."
+              />
+              <ReviewCard
+                name="Richard Ayling"
+                location="Air conditioning installation client"
+                text="From start to finish, the whole process with Algarve Seasons was excellent. The team were organised, professional, and kept me fully informed throughout. The installers who fitted the air conditioning were fantastic — on time, polite, and very efficient. They worked carefully, cleaned everything up afterward, and their attention to detail was impressive. It's great to see a company with such high standards of service and workmanship. I highly recommend Algarve Seasons to anyone looking for a reliable and professional air conditioning installation."
               />
             </div>
           </div>
