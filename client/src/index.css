@@ -215,15 +215,15 @@
     letter-spacing: 0.08em;
     padding: 0.8rem 1.75rem;
     border-radius: 0.4rem;
-    transition: background-color 0.2s ease, transform 0.16s ease, box-shadow 0.2s ease;
+    transition: background-color 0.2s cubic-bezier(0.23, 1, 0.32, 1), transform 0.2s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.2s cubic-bezier(0.23, 1, 0.32, 1);
   }
   .btn-gold:hover {
     background-color: #155A95;
-    box-shadow: 0 6px 22px rgba(30, 115, 190, 0.32);
-    transform: translateY(-1px);
+    box-shadow: 0 8px 28px rgba(30, 115, 190, 0.35);
+    transform: translateY(-2px) scale(1.02);
   }
   .btn-gold:active {
-    transform: scale(0.97);
+    transform: scale(0.97) translateY(0);
   }
 
   /* Secondary CTA — sky blue (matches "Contact Us" on algarveseasons.com) */

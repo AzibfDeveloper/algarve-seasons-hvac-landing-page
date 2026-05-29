@@ -263,7 +263,7 @@ export default function Home() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="tel:+351910675168"
-              className="flex items-center gap-1.5 text-[#1E73BE] hover:text-[#155A95] text-sm font-semibold transition-colors"
+              className="flex items-center gap-1.5 text-[#1E73BE] hover:text-[#155A95] text-sm font-semibold transition-all duration-200 hover:scale-105 hover:drop-shadow-md"
             >
               <Phone size={15} />
               +351 910 675 168
